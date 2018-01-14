@@ -1,0 +1,350 @@
+{
+  "contract_name": "Loaning",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "checkGoalReached",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "ownershipOwner",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "purchaseLoanerOwnership",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "closeLoan",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "loan",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "priceOfProperty",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "loanRequestAmount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "claimLoan",
+      "outputs": [
+        {
+          "name": "uccess",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalAmountLoaned",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "buyer",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "claimedCurrentLoanRecord",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "interestRate",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "payment",
+          "type": "uint256"
+        }
+      ],
+      "name": "calcOwnership",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "moneyToRepay",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "paybackLoan",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "claimAllAssets",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_to",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [
+        {
+          "name": "success",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "ownerships",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "safeWithdrawal",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "propertyValue",
+          "type": "uint256"
+        },
+        {
+          "name": "requestedAmount",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "totalAmountLoaned",
+          "type": "uint256"
+        }
+      ],
+      "name": "LoanFilled",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "loaner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "isLoan",
+          "type": "bool"
+        }
+      ],
+      "name": "FundTransfer",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "newOwner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "OwnershipTransfer",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052600c805461ffff19169055341561001a57600080fd5b604051604080610aa583398101604052808051919060200180519150505b60008054600160a060020a03191633600160a060020a031617905560058290556001819055606460085561007a8183036401000000006100a181026106391704565b60008054600160a060020a03168152600760205260409020805490910190555b50506100c3565b600060055482670de0b6b3a7640000028115156100ba57fe5b0490505b919050565b6109d3806100d26000396000f300606060405236156101045763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166301cb3b2081146101095780630966be571461011e578063232fa73314610149578063365a53061461015e5780634fe2241a1461016b5780635375e1ca146101905780635cf20efd146101b55780636eacc148146101dc57806370a08231146102015780637150d8ae1461023257806375e9e4e6146102615780637c3a00fd14610294578063a02998fb146102b9578063abd94b8d146102e1578063d16ef22a14610306578063e5976d7414610325578063f2fde38b1461034c578063fc93b8661461037f578063fd6b7ef8146103b0575b600080fd5b341561011457600080fd5b61011c6103c5565b005b610135600160a060020a0360043516602435610435565b604051901515815260200160405180910390f35b341561015457600080fd5b61011c6104bd565b005b61011c6004356104e5565b005b341561017657600080fd5b61017e6105d6565b60405190815260200160405180910390f35b341561019b57600080fd5b61017e6105dc565b60405190815260200160405180910390f35b34156101c057600080fd5b6101356105e2565b604051901515815260200160405180910390f35b34156101e757600080fd5b61017e6105f7565b60405190815260200160405180910390f35b341561020c57600080fd5b61017e600160a060020a03600435166105fd565b60405190815260200160405180910390f35b341561023d57600080fd5b61024561060f565b604051600160a060020a03909116815260200160405180910390f35b341561026c57600080fd5b610135600160a060020a036004351661061e565b604051901515815260200160405180910390f35b341561029f57600080fd5b61017e610633565b60405190815260200160405180910390f35b34156102c457600080fd5b61017e600435610639565b60405190815260200160405180910390f35b34156102ec57600080fd5b61017e61065b565b60405190815260200160405180910390f35b610135600435610661565b604051901515815260200160405180910390f35b341561033057600080fd5b610135610692565b604051901515815260200160405180910390f35b341561035757600080fd5b610135600160a060020a0360043516610762565b604051901515815260200160405180910390f35b341561038a57600080fd5b61017e600160a060020a03600435166107de565b60405190815260200160405180910390f35b34156103bb57600080fd5b61011c6107f0565b005b600154600254141561043257600c805460ff191660011790556000546002547fee83e807554a6f74ea1994c12aabfdd8e8a31246394aa2093079d03e3d60b16791600160a060020a031690604051600160a060020a03909216825260208201526040908101905180910390a15b5b565b600554600160a060020a03808416600090815260076020526040812054909202903316318390101561046657600080fd5b61046f33610762565b801561047a57508083145b156104b557600160a060020a03841683156108fc0284604051600060405180830381858888f1935050505015156104b057600080fd5b600191505b5b5092915050565b60005433600160a060020a039081169116146104d857600080fd5b600c805460ff191690555b565b600c54610100900460ff16156104fa57600080fd5b60015481111561050957600080fd5b600160a060020a0333166000908152600660205260409020805482019055600280548201905561053881610639565b33600160a060020a03811660009081526007602052604090819020929092556001805484900381557fe842aea7a5f1b01049d752008c53c52890b1a6daf660cf39e8eec506112bbdf69284919051600160a060020a039093168352602083019190915215156040808301919091526060909101905180910390a1600160a060020a0333166000908152600b60205260409020805460ff191690555b50565b60055481565b60015481565b6000600d544210156105f2575060015b5b5b90565b60025481565b60066020526000908152604090205481565b600054600160a060020a031681565b600b6020526000908152604090205460ff1681565b60035481565b600060055482670de0b6b3a76400000281151561065257fe5b0490505b919050565b60045481565b6000600d5442101561065657600454600a905b0482101561068157600080fd5b6249d4004201600d555b5b5b919050565b600080600080600d544210151561075a5760008054600160a060020a039081168252600760205260408083205433909216835290912054909350915081670de0b6b3a7640000845b04029050806007600033600160a060020a0316600160a060020a03168152602001908152602001600020600082825401925050819055507f34f5c881a53819ccd93fe30edf49163786c277e6aa958bf6537db4d7bc1dd1d33382604051600160a060020a03909216825260208201526040908101905180910390a1600193505b5b5b50505090565b33600160a060020a03818116600090815260076020526040808220805490839055928516825280822083905590927f34f5c881a53819ccd93fe30edf49163786c277e6aa958bf6537db4d7bc1dd1d391839051600160a060020a03909216825260208201526040908101905180910390a1600191505b50919050565b60076020526000908152604090205481565b600c5460009060ff1615156108c65750600160a060020a0333166000908152600660205260408120805490829055908111156108c657600160a060020a03331681156108fc0282604051600060405180830381858888f19350505050156108aa577fe842aea7a5f1b01049d752008c53c52890b1a6daf660cf39e8eec506112bbdf633826000604051600160a060020a039093168352602083019190915215156040808301919091526060909101905180910390a16108c6565b600160a060020a03331660009081526006602052604090208190555b5b5b600c5460ff1680156108e8575060005433600160a060020a039081169116145b156105d357600054600254600160a060020a039091169080156108fc0290604051600060405180830381858888f1935050505015610997576249d4004201600d556002546004819055600080547fe842aea7a5f1b01049d752008c53c52890b1a6daf660cf39e8eec506112bbdf692600160a060020a0390911691604051600160a060020a039093168352602083019190915215156040808301919091526060909101905180910390a16105d3565b600c805460ff191690555b5b5b505600a165627a7a723058209ffa2690e2cb51424c0b92aa2232f1e0f4b2a8fe58fcdda0b9b70aff4b2795cc0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1515933027198
+}
